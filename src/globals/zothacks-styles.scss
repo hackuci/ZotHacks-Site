@@ -11,7 +11,6 @@ $break-small: 500px;
 $break-medium: 900px;
 $break-large: 1250px;
 
-
 // Temporary Appwide Style Variables
 $fontColor: #2e2e2e;
 $errorColor: #a31e1e;
@@ -23,6 +22,8 @@ $lightBackground: #fcfcfc;
 $coloredLightBackground: #AFE3F9;
 $tealBackground: #92dee2;
 $purpleBackground: #cba3fe;
+$blueGreenBackground: #2F9C95;
+$yellowGreenBackground: #ADD8AB;
 
 // Gradients
 $leftGradient: #C6FFDD;
@@ -31,10 +32,7 @@ $moreRightGradient: #f7797d;
 $rightOffGradient: rgb(226, 131, 128);
 
 // Colors 
+$white: #ffffff;
 $lightGray: #e8e8e8;
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+$offWhite: #ededed;
+$pink: #F95C6F;

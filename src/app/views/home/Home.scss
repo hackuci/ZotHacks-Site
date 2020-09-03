@@ -8,6 +8,12 @@
     font-weight: 600;
   }
 
+  button {
+    width: 100px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+    border: 0px !important;
+  }
+
   #background {
     width: 100vw;
     height: 100vh;
@@ -41,6 +47,7 @@
     text-align: left;
     color: white;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
 
     // @media screen and (max-width: $break-medium) {
     //   background-color: $coloredLightBackground;
@@ -76,16 +83,17 @@
       flex-direction: row;
 
       @media screen and (max-width: $break-medium) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         justify-content: center;
 
         img {
-          margin-right: 0 !important;
-          margin-top: 20px;
-          width: 150px !important;
-          height: 150px !important;
+          margin-left: 0rem !important;
+          margin-top: 1rem;
+          margin-bottom: 3rem;
+          width: 200px !important;
+          height: 200px !important;
         }
 
         h1 {
@@ -98,39 +106,51 @@
       }
   
       img {
-        width: 250px;
-        height: 250px;
-        margin-right: 2em;
+        width: 400px;
+        height: 400px;
+        margin-left: 2rem;
       }
 
       div {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        button {
-          width: 100px;
-        }
       }
 
       h1 {
         margin-bottom: .1em !important;
       }
     }
+  }
 
-    
+  .svg-transition-one {
+    transform: translateY(-200px);
+  }
+  .svg-transition-two {
+    transform: translateY(425px);
   }
 
   #info {
-    margin-top: 15vh;
+    margin-top: -5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+
+    img {
+      position: absolute;
+    }
 
     div {
+      color: white;
       text-align: left;
       width: 60vw;
+      background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
+      padding: 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+      z-index: 1;
 
       @media screen and (max-width: $break-small) {
         width: 80vw;
@@ -139,54 +159,58 @@
 
       h2 {
         text-align: center;
+        font-size: 3rem;
         // width: 80vw;
         
         @media screen and (max-width: $break-small) {
-          font-size: 50px;
+          font-size: 25px;
         }
       }
     }
   }
 
-  #numbers {
-    margin-top: 10vh;
+  #mentors {
+    margin-top: 15rem;
+    margin-bottom: -10rem;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: $coloredLightBackground;
-    color: white;
-    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
 
     & > h2 {
       margin-top: 10vh;
       width: 80vw;
     }
 
-    .numbers-cards {
-      margin-top: 5vh;
-      margin-bottom: 10vh;
-      width: 80vw;
+    div {
+      width: 70vw;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: row;
 
-      & > div {
-        margin: 40px;
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 1rem;
       }
 
-      @media screen and (max-width: $break-medium) {
+      .mentor-information { 
+        margin-left: 5rem;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
+        text-align: left;
       }
     }
   }
 
   #faq {
     // min-height: 100vh;
+    margin-top: 12rem;
+    color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
 
     & > h2 {
       margin-top: 10vh;
@@ -194,21 +218,10 @@
     }
 
     & > div {
-      width: 80vw;
-    }
+      width: 60vw;
 
-    .faq-grid {
-      margin-bottom: 10vh;
-      display: grid !important;
-      grid-template-columns: 10% 35% 10% 35% 10%;
-
-      h3 {
-        margin-top: 30px;
-        font-size: 30px;
-      }
-
-      @media screen and (max-width: $break-medium) {
-        grid-template-columns: 100%;
+      @media screen and (max-width: $break-small) {
+        width: 80vw;
       }
     }
   }
@@ -220,7 +233,7 @@
     align-items: center;
     color: white;
     background-color: $coloredLightBackground;
-    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
 
     p {
       margin: 0;

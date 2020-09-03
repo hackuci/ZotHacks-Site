@@ -43,43 +43,15 @@ function Nav({history}) {
             Home
           </p>
         </Link>
-        {/* <div className="resource-button-hide" onMouseLeave={() => test(false)}>
-          <p onMouseOver={() => test(true)}>
-            Resources 
-            <i className="fa fa-angle-down"></i>
-          </p>
-          <Spring to={{ opacity: resourceHover ? 1 : 0 }}>
-            {(props) => (
-              <div className="nav-resource-dropdown" style={props}>
-                <div className="nav-resource-hover-buffer"></div>
-                <div className="nav-resource-dropdown-tag"/>
-                {resources.map(function(resource, index) {
-                    return (
-                      <div>
-                        <div className="nav-resource-dropdown-item">
-                          <p>
-                            {resource.label}
-                          </p>
-                        </div>
-                        { index < resources.length - 1 ?
-                          <div className="nav-resource-border"></div> : null
-                        }
-                      </div>
-                    )
-                  })}
-              </div>
-            )}
-          </Spring>
-        </div> */}
         {
           isHomepage ? 
           <Link to="/schedule">
-            <Button variant="light">
+            <Button variant="outline-light">
               Schedule
             </Button>
           </Link> :
           <a href="https://tinyurl.com/zothacks2019">
-            <Button variant="light">
+            <Button variant="outline-light">
               Apply
             </Button>
           </a>

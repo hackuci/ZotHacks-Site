@@ -36,7 +36,6 @@
     }
   }
 
-
   #intro {
     height: 100vh;
     position: relative;
@@ -48,10 +47,6 @@
     color: white;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
-
-    // @media screen and (max-width: $break-medium) {
-    //   background-color: $coloredLightBackground;
-    // }
 
     .schedule-nav {
       position: absolute;
@@ -88,6 +83,17 @@
         text-align: center;
         justify-content: center;
 
+        .zucc-wrapper {
+          height: 300px !important;
+          margin-bottom: 30px;
+
+          .zucc-shadow {
+            width: 80px !important;
+            height: 15px !important;
+            margin-left: 15px !important;
+          }
+        }
+
         img {
           margin-left: 0rem !important;
           margin-top: 1rem;
@@ -102,6 +108,22 @@
 
         .title-info-description {
           width: 70vw;
+        }
+      }
+
+      .zucc-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 500px;
+
+        .zucc-shadow {
+          width: 150px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: #2e2e2e;
+          margin-left: 60px;
         }
       }
   
@@ -128,6 +150,12 @@
   }
   .svg-transition-two {
     transform: translateY(425px);
+  }
+
+  @media screen and (max-width: $break-medium) {
+    svg {
+      display: none;
+    }
   }
 
   #info {
@@ -170,8 +198,8 @@
   }
 
   #mentors {
-    margin-top: 15rem;
-    margin-bottom: -10rem;
+    margin-top: 10rem;
+    margin-bottom: -20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,6 +228,26 @@
         flex-direction: column;
         text-align: left;
       }
+    }
+
+    .mentors-butterfly {
+      width: 100px;
+      height: 100px;
+    }
+
+    .--one {
+      width: 120px;
+      height: 120px;
+      margin-right: auto;
+      margin-left: 8vw;
+      margin-bottom: 2rem;
+      transform: scaleX(-1);
+    }
+
+    .--two {
+      margin-left: auto;
+      margin-right: 12vw;
+      transform: translateY(-40px);
     }
   }
 

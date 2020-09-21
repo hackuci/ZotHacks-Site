@@ -4,42 +4,13 @@
   text-align: center;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: $coloredLightBackground;
+  background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
     font-weight: 600;
-  }
-
-  .stripes {
-    width: 100vw;
-    height: 80vh;
-    transform-origin: 0;
-    background-size: cover;
-    position: absolute;
-  
-    .div {
-      position: absolute;
-    }
-  }
-
-  .inner0 {
-    background-image: linear-gradient(to left, $leftGradient, $rightOffGradient);
-    grid-area: 5 / 5 / 5 / 6;
-  }
-  
-  .inner1 {
-    background-image: linear-gradient(to right, $rightOffGradient, $leftGradient);  
-    grid-area: 1 / 1 / 1 / 4;
-  }
-  
-  .inner2 {
-    background-image: linear-gradient(to left, $leftGradient, $rightOffGradient);  
-    grid-area: 2 / 3 / 2 / 6;
-  }
-  
-  .inner3 {
-    background-image: linear-gradient(to right, $leftGradient, $rightOffGradient);  
-    grid-area: 5 / 1 / 5 / 3;
   }
 
   #intro {
@@ -133,7 +104,8 @@
     flex-direction: column;
 
     .schedule-countdown {
-      margin-top: 70px;
+      top: 50px;
+      margin-bottom: 50px;
       height: 25vh;
       width: 100vw;
       display: flex;
@@ -142,45 +114,75 @@
       color: white;
       text-align: left;
       flex-direction: column;
+      position: absolute;
 
-      .hat-left {
-        width: 40px;
-        height: 40px;
+      .mentors-butterfly {
+        width: 80px;
+        height: 80px;
+        position: relative;
       }
-        
-      .schedule-countdown-border {
-        width: 160px;
-        height: 4px;
-        border-radius: 2px;
-        background-color: white;
+    
+      .--one {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2rem;
+        top: 80px;
+        left: -200px;
+      }
+    
+      .--two {
+        top: -30px;
+        left: 180px;
+      }
+    }
+  }
+
+  #schedule-cards {
+    margin-top: 350px;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .schedule-card {
+      height: 600px;
+      width: 400px;
+      padding: 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 2rem;
+      margin-right: 2rem;
+
+      h3 {
+        color: $blueGreenBackground;
       }
 
-      & > div {
-        width: 50vw;
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        text-align: center;
+      .schedule-card-event {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-        @media screen and (max-width: 800px) {
-          width: 80vw;
-
-          h3 {
-            font-size: 25px;
-          }
+        h4 {
+          font-size: 20px;
+          color: black;
         }
-        
-        div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+  
+        p {
+          color: $pink;
+          font-size: 20px;
         }
       }
     }
   }
 
   #credits {
-    background-color: white;
+    color: $white;
     height: 15vh;
+    width: 100vw;
     margin-top: 10vh;
     display: flex;
     justify-content: center;

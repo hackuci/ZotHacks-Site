@@ -4,6 +4,7 @@ import { faqQuestions } from "assets/data/faq-questions"
 
 import { Button } from "react-bootstrap"
 import Fade from "react-reveal/Fade"
+import { motion } from "framer-motion"
 
 import { FAQCollapse } from "app/containers"
 import zothacksSucc from "assets/images/zothacksucc.png"
@@ -13,11 +14,12 @@ import butterflyOne from "assets/images/butterflyOne.png"
 import butterflyTwo from "assets/images/butterflyTwo.png"
 
 function Home() {
+
   return (
     <div className="Home">
       <section id="intro">
         <div className="title-info">
-          <Fade duration={3000}>
+          <Fade duration={1000} left>
             <div>
               <h1>ZotHacks</h1>
               <h4>November 13-14th</h4>
@@ -34,7 +36,30 @@ function Home() {
               </a>
             </div>
           </Fade>
-          <img src={zothacksSucc} />
+          <div className="zucc-wrapper">
+            <motion.img 
+              src={zothacksSucc} 
+              animate={{
+                y: [20, 10, 20]
+              }}
+              transition={{
+                duration: 5,
+                loop: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+            <motion.div 
+              className="zucc-shadow" 
+              animate={{
+                scale: [1, 1.3, 1],
+              }}
+              transition={{
+                duration: 5,
+                loop: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+          </div>
         </div>
       </section>
       <svg
@@ -64,6 +89,7 @@ function Home() {
         </div>
       </section>
       <section id="mentors">
+        <img className="mentors-butterfly --one" src={butterflyOne}></img>
         <div>
           <img src={mentorship} />
           <div className="mentor-information">
@@ -83,6 +109,7 @@ function Home() {
             </Button>
           </div>
         </div>
+        <img className="mentors-butterfly --two" src={butterflyTwo}></img>
       </section>
       <svg
         className="svg-transition-two"

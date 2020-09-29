@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a69f424aaa3e5952a5d7f738ddfbf5c",
+    "revision": "34ac6ba3d44c23d7e32931f770b7d766",
     "url": "/ZotHacks-Site/index.html"
   },
   {
-    "revision": "d84731aff8f6850183ae",
+    "revision": "c7bc475422ff94c08169",
     "url": "/ZotHacks-Site/static/css/main.9e6ffb20.chunk.css"
   },
   {
-    "revision": "b666a63c8f3d6505a441",
-    "url": "/ZotHacks-Site/static/js/2.b49d63d9.chunk.js"
+    "revision": "fa16f77797c7fa041ca6",
+    "url": "/ZotHacks-Site/static/js/2.69ab5869.chunk.js"
   },
   {
     "revision": "1d550c6de761445add1ab069f0dc39f4",
-    "url": "/ZotHacks-Site/static/js/2.b49d63d9.chunk.js.LICENSE.txt"
+    "url": "/ZotHacks-Site/static/js/2.69ab5869.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d84731aff8f6850183ae",
-    "url": "/ZotHacks-Site/static/js/main.107caf34.chunk.js"
+    "revision": "c7bc475422ff94c08169",
+    "url": "/ZotHacks-Site/static/js/main.c4fbb4ce.chunk.js"
   },
   {
     "revision": "1cb5a5f3056a2cc06bf8",

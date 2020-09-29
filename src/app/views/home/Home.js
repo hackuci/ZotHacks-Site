@@ -22,7 +22,8 @@ function Home() {
             <Fade duration={1000} left>
               <div>
                 <h1>ZotHacks</h1>
-                <h4>November 13-14th</h4>
+                {/* <h4>November 13-14th</h4> */}
+                <h4>Date to be revealed!</h4>
                 <a href="https://tinyurl.com/zothacks2019">
                   <Button
                     style={{

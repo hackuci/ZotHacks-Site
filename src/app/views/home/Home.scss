@@ -14,39 +14,25 @@
     border: 0px !important;
   }
 
-  #background {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-
-    @media screen and (max-width: 1200px) {
-      display: none;
-    }
-  }
-
-  #mobile-background {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-
-    @media screen and (min-width: 1200px) {
-      display: none;
-    }
-  }
-
   #intro {
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     text-align: left;
     color: white;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
+
+    .intro-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: calc(100% - 320px);
+    }
 
     .schedule-nav {
       position: absolute;
@@ -76,6 +62,7 @@
     .title-info {
       display: flex;
       flex-direction: row;
+      margin-top: 15rem;
 
       @media screen and (max-width: $break-medium) {
         flex-direction: column-reverse;
@@ -145,21 +132,13 @@
     }
   }
 
-  .svg-transition-one {
-    transform: translateY(-200px);
-  }
-  .svg-transition-two {
-    transform: translateY(425px);
-  }
-
   @media screen and (max-width: $break-medium) {
-    svg {
+    .wave-transition {
       display: none;
     }
   }
 
   #info {
-    margin-top: -5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,6 +147,15 @@
 
     img {
       position: absolute;
+      width: 100vw;
+
+      @media screen and (max-width: $break-small) {
+        transform: scale(2);
+      }
+
+      @media screen and (max-width: $break-medium) {
+        margin-top: 5rem;
+      }
     }
 
     div {
@@ -183,6 +171,12 @@
       @media screen and (max-width: $break-small) {
         width: 80vw;
         text-align: center;
+        padding: 1.7rem;
+        padding-top: 2rem;
+      }
+
+      @media screen and (max-width: $break-medium) {
+        margin-top: 5rem;
       }
 
       h2 {
@@ -198,12 +192,12 @@
   }
 
   #mentors {
-    margin-top: 10rem;
-    margin-bottom: -20rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     & > h2 {
       margin-top: 10vh;
@@ -215,10 +209,21 @@
       display: flex;
       flex-direction: row;
 
+      @media screen and (max-width: $break-medium) {
+        flex-direction: column;
+        align-items: center;
+      }
+
       img {
         width: 300px;
         height: 300px;
         border-radius: 1rem;
+
+        @media screen and (max-width: $break-medium) {
+          width: 240px;
+          height: 240px;
+          margin-top: 12rem;
+        }
       }
 
       .mentor-information { 
@@ -227,6 +232,14 @@
         justify-content: center;
         flex-direction: column;
         text-align: left;
+
+        @media screen and (max-width: $break-medium) {
+          margin-top: 2rem;
+          margin-left: 0rem;
+          margin-bottom: 5rem;
+          text-align: center;
+          align-items: center;
+        }
       }
     }
 
@@ -241,28 +254,43 @@
       margin-right: auto;
       margin-left: 8vw;
       margin-bottom: 2rem;
-      transform: scaleX(-1);
+
+      @media screen and (max-width: $break-medium) {
+        position: absolute;
+        top: 21px;  
+        margin: 0;
+        transform: translateX(-50px);
+      }
     }
 
     .--two {
       margin-left: auto;
       margin-right: 12vw;
       transform: translateY(-40px);
+
+      @media screen and (max-width: $break-medium) {
+        position: absolute;
+        top: -18px;
+        margin: 0;
+        transform: translateX(40px)
+      }
     }
   }
 
   #faq {
-    // min-height: 100vh;
-    margin-top: 12rem;
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
 
     & > h2 {
-      margin-top: 10vh;
       width: 80vw;
+
+      @media screen and (max-width: $break-medium) {
+        margin-top: 3rem;
+      }
     }
 
     & > div {

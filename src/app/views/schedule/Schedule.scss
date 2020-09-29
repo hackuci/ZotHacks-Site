@@ -13,6 +13,13 @@
     font-weight: 600;
   }
 
+  h2 {
+    @media screen and (max-width: $break-medium) {
+      font-size: 3rem;
+      margin-bottom: 0;
+    }
+  }
+
   #intro {
     height: 90vh;
     position: relative;
@@ -116,23 +123,43 @@
       flex-direction: column;
       position: absolute;
 
+      @media screen and (max-width: $break-medium) {
+        margin-bottom: 0 !important;
+        height: 12vh;
+      }
+
       .mentors-butterfly {
         width: 80px;
         height: 80px;
         position: relative;
+
+        @media screen and (max-width: $break-medium) {
+          width: 60px;
+          height: 60px;
+        }
       }
     
       .--one {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         margin-bottom: 2rem;
-        top: 80px;
-        left: -200px;
+        top: 116px;
+        left: -220px;
+
+        @media screen and (max-width: $break-medium) {
+          top: 200px;
+          left: -40px;
+        }
       }
     
       .--two {
-        top: -30px;
-        left: 180px;
+        top: -104px;
+        left: 207px;
+
+        @media screen and (max-width: $break-medium) {
+          top: 60px;
+          left: 40px;
+        }
       }
     }
   }
@@ -144,6 +171,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media screen and (max-width: $break-medium) {
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      margin-top: 300px;
+    }
 
     .schedule-card {
       height: 600px;
@@ -157,6 +191,13 @@
       margin-left: 2rem;
       margin-right: 2rem;
 
+      @media screen and (max-width: $break-medium) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        width: 80vw;
+      }
+
       h3 {
         color: $blueGreenBackground;
       }
@@ -165,6 +206,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        text-align: left;
 
         h4 {
           font-size: 20px;

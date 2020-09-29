@@ -6,10 +6,12 @@ import { motion } from "framer-motion"
 import butterflyOne from "assets/images/butterflyOne.png"
 import butterflyTwo from "assets/images/butterflyTwo.png"
 import { scheduleData } from "../../../assets/data/schedule-data";
+import { LeafRain } from "../../components";
 
 function Schedule() {
   return (
     <div className="Schedule">
+      <LeafRain/>
       <section id="schedule-block">
         <div className="schedule-countdown">
           <motion.img 

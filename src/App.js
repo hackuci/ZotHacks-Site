@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Switch, Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import history from './history';
 import './App.scss';
 
@@ -15,13 +15,13 @@ import {
 function App() {
   return (
     <div className='App'>
-      <Router history={history} basename="/ZotHacks-Site">
+      <BrowserRouter history={history} basename="/ZotHacks-Site">
         <Nav history={history}></Nav>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/schedule' component={Schedule}/>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

@@ -39,6 +39,20 @@ function Home() {
             </Fade>
             <div className="zucc-wrapper">
               <motion.img
+                className="zucc-butterfly"
+                src={butterflyTwo}
+                animate={{
+                  rotate: [1, 3, 2, 5, 1, 2, 3, 1],
+                  y: [20, 10, 20],
+                }}
+                transition={{
+                  duration: 5,
+                  loop: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+              <motion.img
+                className="succulent"
                 src={zothacksSucc}
                 animate={{
                   y: [20, 10, 20],
@@ -91,10 +105,7 @@ function Home() {
         </div>
       </section>
       <section id="mentors">
-        <img
-          className="mentors-butterfly --one"
-          src={butterflyOne}
-        />
+        <img className="mentors-butterfly --one" src={butterflyOne} />
         <div>
           <img src={mentorship} />
           <div className="mentor-information">
@@ -115,10 +126,7 @@ function Home() {
             </Button>
           </div>
         </div>
-        <img
-          className="mentors-butterfly --two"
-          src={butterflyTwo}
-        />
+        <img className="mentors-butterfly --two" src={butterflyTwo} />
       </section>
       <section id="faq">
         <svg

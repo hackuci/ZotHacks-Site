@@ -69,6 +69,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+        margin-top: 20rem;
 
         .zucc-wrapper {
           height: 300px !important;
@@ -78,6 +79,11 @@
             width: 80px !important;
             height: 15px !important;
             margin-left: 15px !important;
+          }
+
+          .zucc-butterfly {
+            width: 50px !important;
+            height: 50px !important;
           }
         }
 
@@ -103,7 +109,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        position: relative;
         height: 500px;
+
+        .zucc-butterfly {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          z-index: 10;
+          right: 45px;
+          top: 25px;
+        }
 
         .zucc-shadow {
           width: 150px;
@@ -114,7 +130,7 @@
         }
       }
   
-      img {
+      .succulent {
         width: 400px;
         height: 400px;
         margin-left: 2rem;
@@ -139,6 +155,7 @@
   }
 
   #info {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -14,6 +14,10 @@
     border: 0px !important;
   }
 
+  .sin-wave {
+    width: 100vw;
+  }
+
   #intro {
     height: 100vh;
     position: relative;
@@ -306,6 +310,7 @@
 
     & > h2 {
       width: 80vw;
+      margin-top: 2rem;
 
       @media screen and (max-width: $break-medium) {
         margin-top: 3rem;

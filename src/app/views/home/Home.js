@@ -68,6 +68,7 @@ function Home() {
                 className="zucc-shadow"
                 animate={{
                   scale: [1.3, 1, 1.3],
+                  y: [-15, -15, -15]
                 }}
                 transition={{
                   duration: 5,

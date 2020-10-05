@@ -79,6 +79,7 @@
             width: 80px !important;
             height: 15px !important;
             margin-left: 15px !important;
+            opacity: .6;
           }
 
           .zucc-butterfly {
@@ -126,12 +127,13 @@
           height: 25px;
           border-radius: 50%;
           background-color: #2e2e2e;
+          opacity: .8;
           margin-left: 60px;
         }
       }
   
       .succulent {
-        width: 400px;
+        width: 424px;
         height: 400px;
         margin-left: 2rem;
       }
@@ -167,7 +169,7 @@
       width: 100vw;
 
       @media screen and (max-width: $break-small) {
-        transform: scale(2);
+        display: hidden;
       }
 
       @media screen and (max-width: $break-medium) {

@@ -12,11 +12,18 @@
     color: $offWhite;
   }
 
+  .answer-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
   .faq-collapse-question {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .faq-collapse-divider {

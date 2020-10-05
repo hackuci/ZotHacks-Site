@@ -99,7 +99,7 @@ function Home() {
             <p>
               ZotHacks is a beginner-friendly hackathon where students with
               minimal computer science experience will learn to build and build
-              a full-stack web application. Through ZotHacks, we introduce these
+              their first CS project. Through ZotHacks, we introduce these
               students to the world of hackathons and web development by
               providing technical workshops, strong mentorship, and free food!
             </p>
@@ -113,8 +113,8 @@ function Home() {
           <div className="mentor-information">
             <h3>Interested in becoming a mentor?</h3>
             <p>
-              Please become a mentor. Please. Pleaaaaaase. Cmonnnnn. Please we
-              need mentors. Cmon please. Think about it, lemme know ;){" "}
+              If you love the hackathon experience and would love to share it
+              with new developers, apply to be a mentor!
             </p>
             <Button
               style={{

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ZotHacks-Site/precache-manifest.befe78a1e48586f76cc61b81de1cf790.js"
+  "/ZotHacks-Site/precache-manifest.23eda61cc0277cf702e9af529ad71881.js"
 );
 
 self.addEventListener('message', (event) => {

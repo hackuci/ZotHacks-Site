@@ -9,16 +9,16 @@ function Nav() {
   return (
     <div className="nav">
       <div className="nav-left">
-        <Link to="/">
+        <a href="https://zothacks.com/">
           <img src={logo} alt="Zothacks Logo"></img>
-        </Link>
+        </a>
       </div>
       <div className="nav-right">
-        <Link to="/">
+        <a href="https://zothacks.com/">
           <p className="home-button-hide">
             Home
           </p>
-        </Link>
+        </a>
         {/* <Link to="/schedule">
           <Button variant="outline-light">
             Schedule

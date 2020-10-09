@@ -15,7 +15,7 @@ import {
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter history={history} basename="/ZotHacks-Site">
+      <BrowserRouter history={history} basename="/">
         <Nav history={history}></Nav>
         <Switch>
           <Route exact path='/' component={Home}/>

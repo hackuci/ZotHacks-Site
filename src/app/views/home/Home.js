@@ -24,9 +24,8 @@ function Home() {
             <Fade duration={1000} left>
               <div>
                 <h1>ZotHacks</h1>
-                {/* <h4>November 13-14th</h4> */}
-                <h4>Date to be revealed!</h4>
-                <a href="https://tinyurl.com/zothacks2019">
+                <h4>November 13-14th</h4>
+                <a href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps">
                   <Button
                     style={{
                       borderRadius: "50px",
@@ -70,7 +69,7 @@ function Home() {
                 className="zucc-shadow"
                 animate={{
                   scale: [1.3, 1, 1.3],
-                  y: [-15, -15, -15]
+                  y: [-15, -15, -15],
                 }}
                 transition={{
                   duration: 5,
@@ -81,7 +80,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <img className="sin-wave sin-wave--one" src={sinWaveOne}/>
+        <img className="sin-wave sin-wave--one" src={sinWaveOne} />
       </section>
       <section id="info">
         <img src={bubbles} />
@@ -93,7 +92,8 @@ function Home() {
               minimal computer science experience will learn to build and build
               their first CS project. Through ZotHacks, we introduce these
               students to the world of hackathons and web development by
-              providing technical workshops, strong mentorship, and free food!
+              providing technical workshops, strong mentorship, and
+              virtual-friendly events!
             </p>
           </Fade>
         </div>
@@ -105,25 +105,27 @@ function Home() {
           <div className="mentor-information">
             <h3>Interested in becoming a mentor?</h3>
             <p>
-              If you love the hackathon experience and would love to share it
-              with new developers, apply to be a mentor!
+              Have hackathon experience and would love to share it with new
+              developers? Apply to be a mentor for ZotHacks 2020!
             </p>
-            <Button
-              style={{
-                borderRadius: "50px",
-                width: "200px",
-                backgroundColor: "#F95C6F",
-                height: "40px",
-              }}
-            >
-              Apply to be a Mentor
-            </Button>
+            <a href="https://docs.google.com/forms/d/1hCRUwgHL485K8O_OXVOohpAU0U_jqqpbHctsu6i4mdk">
+              <Button
+                style={{
+                  borderRadius: "50px",
+                  width: "200px",
+                  backgroundColor: "#F95C6F",
+                  height: "40px",
+                }}
+              >
+                Apply to be a Mentor
+              </Button>
+            </a>
           </div>
         </div>
         <img className="mentors-butterfly --two" src={butterflyTwo} />
       </section>
       <section id="faq">
-        <img className="sin-wave sin-wave--two" src={sinWaveTwo}/>
+        <img className="sin-wave sin-wave--two" src={sinWaveTwo} />
         <Fade duration={1000}>
           <h2>FAQ</h2>
           <div>

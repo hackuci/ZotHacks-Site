@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/ZotHacks-Site/static/css/main.1c76ed7c.chunk.css",
-    "main.js": "/ZotHacks-Site/static/js/main.1d82bb54.chunk.js",
-    "main.js.map": "/ZotHacks-Site/static/js/main.1d82bb54.chunk.js.map",
-    "runtime-main.js": "/ZotHacks-Site/static/js/runtime-main.f2d7dc37.js",
-    "runtime-main.js.map": "/ZotHacks-Site/static/js/runtime-main.f2d7dc37.js.map",
-    "static/js/2.e2606939.chunk.js": "/ZotHacks-Site/static/js/2.e2606939.chunk.js",
-    "static/js/2.e2606939.chunk.js.map": "/ZotHacks-Site/static/js/2.e2606939.chunk.js.map",
-    "index.html": "/ZotHacks-Site/index.html",
-    "precache-manifest.23eda61cc0277cf702e9af529ad71881.js": "/ZotHacks-Site/precache-manifest.23eda61cc0277cf702e9af529ad71881.js",
-    "service-worker.js": "/ZotHacks-Site/service-worker.js",
-    "static/css/main.1c76ed7c.chunk.css.map": "/ZotHacks-Site/static/css/main.1c76ed7c.chunk.css.map",
-    "static/js/2.e2606939.chunk.js.LICENSE.txt": "/ZotHacks-Site/static/js/2.e2606939.chunk.js.LICENSE.txt",
-    "static/media/bubbles.png": "/ZotHacks-Site/static/media/bubbles.8516b300.png",
-    "static/media/butterflyOne.png": "/ZotHacks-Site/static/media/butterflyOne.c9d40476.png",
-    "static/media/butterflyTwo.png": "/ZotHacks-Site/static/media/butterflyTwo.a767fc68.png",
-    "static/media/mentorship.png": "/ZotHacks-Site/static/media/mentorship.4a3a1993.png",
-    "static/media/zothacks-logo.png": "/ZotHacks-Site/static/media/zothacks-logo.18d310e4.png",
-    "static/media/zothacksucc.png": "/ZotHacks-Site/static/media/zothacksucc.71d683d4.png"
+    "main.css": "/static/css/main.584443b2.chunk.css",
+    "main.js": "/static/js/main.77d0c4e5.chunk.js",
+    "main.js.map": "/static/js/main.77d0c4e5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7966b87c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7966b87c.js.map",
+    "static/js/2.aff9d46d.chunk.js": "/static/js/2.aff9d46d.chunk.js",
+    "static/js/2.aff9d46d.chunk.js.map": "/static/js/2.aff9d46d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e20cd8a4c8d89fb4c104033a8bfbc0e8.js": "/precache-manifest.e20cd8a4c8d89fb4c104033a8bfbc0e8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.584443b2.chunk.css.map": "/static/css/main.584443b2.chunk.css.map",
+    "static/js/2.aff9d46d.chunk.js.LICENSE.txt": "/static/js/2.aff9d46d.chunk.js.LICENSE.txt",
+    "static/media/bubbles.png": "/static/media/bubbles.8516b300.png",
+    "static/media/butterflyOne.png": "/static/media/butterflyOne.c9d40476.png",
+    "static/media/butterflyTwo.png": "/static/media/butterflyTwo.a767fc68.png",
+    "static/media/mentorship.png": "/static/media/mentorship.4a3a1993.png",
+    "static/media/zothacks-logo.png": "/static/media/zothacks-logo.18d310e4.png",
+    "static/media/zothacksucc.png": "/static/media/zothacksucc.71d683d4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f2d7dc37.js",
-    "static/js/2.e2606939.chunk.js",
-    "static/css/main.1c76ed7c.chunk.css",
-    "static/js/main.1d82bb54.chunk.js"
+    "static/js/runtime-main.7966b87c.js",
+    "static/js/2.aff9d46d.chunk.js",
+    "static/css/main.584443b2.chunk.css",
+    "static/js/main.77d0c4e5.chunk.js"
   ]
 }

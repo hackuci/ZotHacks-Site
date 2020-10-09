@@ -2,7 +2,7 @@
   "name": "zothacks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://hackuci.github.io/ZotHacks-Site/",
+  "homepage": "https://zothacks.com",
   "dependencies": {
     "feather-icons": "^4.28.0",
     "framer-motion": "^2.6.15",

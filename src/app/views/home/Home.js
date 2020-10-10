@@ -26,7 +26,7 @@ function Home() {
             <Fade duration={1000} left>
               <div>
                 <h1>ZotHacks</h1>
-                <h4>November 13-14th</h4>
+                <h4>November 13-15th</h4>
                 <a
                   href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
                   data-place="bottom"

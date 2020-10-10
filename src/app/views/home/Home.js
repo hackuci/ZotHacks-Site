@@ -5,6 +5,7 @@ import { faqQuestions } from "assets/data/faq-questions"
 import { Button } from "react-bootstrap"
 import Fade from "react-reveal/Fade"
 import { motion } from "framer-motion"
+import ReactTooltip from "react-tooltip"
 
 import { FAQCollapse } from "app/containers"
 import zothacksSucc from "assets/images/zothacksucc.png"
@@ -18,6 +19,7 @@ import sinWaveTwo from "assets/images/white_sinewave_2.png"
 function Home() {
   return (
     <div className="Home">
+      <ReactTooltip />
       <section id="intro">
         <div className="intro-wrapper">
           <div className="title-info">
@@ -25,7 +27,11 @@ function Home() {
               <div>
                 <h1>ZotHacks</h1>
                 <h4>November 13-14th</h4>
-                <a href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps">
+                <a
+                  href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
+                  data-place="bottom"
+                  data-tip="Make sure to use your UCI email!"
+                >
                   <Button
                     style={{
                       borderRadius: "50px",

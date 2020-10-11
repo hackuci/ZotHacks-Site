@@ -114,7 +114,11 @@ function Home() {
               Have hackathon experience and would love to share it with new
               developers? Apply to be a mentor for ZotHacks 2020!
             </p>
-            <a href="https://docs.google.com/forms/d/1hCRUwgHL485K8O_OXVOohpAU0U_jqqpbHctsu6i4mdk">
+            <a
+              href="https://docs.google.com/forms/d/1hCRUwgHL485K8O_OXVOohpAU0U_jqqpbHctsu6i4mdk"
+              data-place="bottom"
+              data-tip="Make sure to use your UCI email!"
+            >
               <Button
                 style={{
                   borderRadius: "50px",

@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './Nav.scss';
 
 import logo from 'assets/images/zothacks-logo.png';
-import { Button } from 'react-bootstrap';
 
 function Nav() {
   return (

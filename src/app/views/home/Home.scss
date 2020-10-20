@@ -300,6 +300,33 @@
     }
   }
 
+  #sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    & > h2 {
+      margin-top: 2rem;
+    }
+
+    .sponsor-logo-wrapper {
+      width: 70vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+
+      img {
+        margin: 2rem;
+        width: 200px;
+      }
+    }
+  }
+
   #faq {
     color: white;
     display: flex;

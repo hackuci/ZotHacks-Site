@@ -15,6 +15,9 @@ import butterflyOne from "assets/images/butterflyOne.png"
 import butterflyTwo from "assets/images/butterflyTwo.png"
 import sinWaveOne from "assets/images/white_sinewave_1.png"
 import sinWaveTwo from "assets/images/white_sinewave_2.png"
+import digitalOcean from "assets/images/sponsors/digitalOcean.png"
+import voiceflow from "assets/images/sponsors/voiceflow.png"
+import danaher from "assets/images/sponsors/danaher.png"
 
 function Home() {
   return (
@@ -133,6 +136,16 @@ function Home() {
           </div>
         </div>
         <img className="mentors-butterfly --two" src={butterflyTwo} />
+      </section>
+      <section id="sponsors">
+        <Fade duration={1000}>
+          <h2>Sponsors</h2>
+          <div className="sponsor-logo-wrapper">
+            <img src={digitalOcean}></img>
+            <img src={voiceflow}></img>
+            <img src={danaher}></img>
+          </div>
+        </Fade>
       </section>
       <section id="faq">
         <img className="sin-wave sin-wave--two" src={sinWaveTwo} />

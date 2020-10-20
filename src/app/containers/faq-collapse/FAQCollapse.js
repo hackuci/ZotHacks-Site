@@ -3,7 +3,6 @@ import "./FAQCollapse.scss"
 
 import { motion, AnimatePresence } from "framer-motion"
 import { Plus, Minus } from "react-feather"
-import Fade from "react-reveal/Fade"
 
 function FAQCollapse({ question, answer }) {
   const [isOpened, setIsOpened] = useState(false)

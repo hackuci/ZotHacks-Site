@@ -140,10 +140,14 @@ function Home() {
       <section id="sponsors">
         <Fade duration={1000}>
           <h2>Sponsors</h2>
+          <h3>Paid Sponsors</h3>
+          <div className="sponsor-logo-wrapper">
+            <img src={danaher}></img>
+          </div>
+          <h3>Service Sponsors</h3>
           <div className="sponsor-logo-wrapper">
             <img src={digitalOcean}></img>
             <img src={voiceflow}></img>
-            <img src={danaher}></img>
           </div>
         </Fade>
       </section>

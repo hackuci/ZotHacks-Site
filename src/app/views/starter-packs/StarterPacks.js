@@ -1,12 +1,49 @@
 import React from "react"
 import "./StarterPacks.scss"
 
+import { LeafRain } from "../../components"
+
 function StarterPacks() {
   return (
     <div className="StarterPacks">
+      <LeafRain />
       <h2>Starter Packs</h2>
       <section className="starter-pack-block">
-        <h3>API Resources</h3>
+        <h3>ZotHacks Resources</h3>
+        <p>
+          Take a look at the ZotHacks workshop repos we have set up for this
+          hackathon! Across the repositories we have a frontend application for
+          visualizing stock data, and a backend application for driving the
+          frontend with data. The repos start on the "master" branch, and end on
+          the "workshop" branch.
+        </p>
+        <h4>Frontend Repository</h4>
+        <p>Repository that holds the code for the frontend workshop.</p>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/hackuci/zothacks-2020-frontend"
+              target="_blank"
+            >
+              ZotHacks-2020-Frontend
+            </a>
+          </li>
+        </ul>
+        <h4>Frontend Repository</h4>
+        <p>Repository that holds the code for the backend workshop.</p>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/hackuci/zothacks-2020-backend"
+              target="_blank"
+            >
+              ZotHacks-2020-Backend
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section className="starter-pack-block">
+        <h3 style={{ marginTop: "2rem" }}>API Resources</h3>
         <p>
           Application Programming Interface (API) are interfaces or
           communication protocol that simplifies implementation and maintenance
@@ -21,14 +58,24 @@ function StarterPacks() {
         </p>
         <ul>
           <li>
-            <a href="https://developer.spotify.com/documentation/web-api/">Spotify Web API Reference</a>
+            <a
+              href="https://developer.spotify.com/documentation/web-api/"
+              target="_blank"
+            >
+              Spotify Web API Reference
+            </a>
           </li>
         </ul>
         <h4>Twitter API</h4>
         <p>API that retrieves data on tweets and trends.</p>
         <ul>
           <li>
-            <a href="https://developer.twitter.com/en/docs/twitter-api">Twitter Web API Reference</a>
+            <a
+              href="https://developer.twitter.com/en/docs/twitter-api"
+              target="_blank"
+            >
+              Twitter Web API Reference
+            </a>
           </li>
         </ul>
         <h4>Google Cloud API</h4>
@@ -38,12 +85,15 @@ function StarterPacks() {
         </p>
         <ul>
           <li>
-            <a href="https://cloud.google.com/apis">Google Cloud API Reference</a>
+            <a href="https://cloud.google.com/apis" target="_blank">
+              Google Cloud API Reference
+            </a>
           </li>
         </ul>
       </section>
       <section id="starter-pack-block">
-        <h3 style={{marginTop: "2rem"}}>Backend Framework Resources</h3>
+        <h3 style={{ marginTop: "2rem" }}>HackUCI Workshop Resources</h3>
+        <h4>Backend Frameworks</h4>
         <p>
           Backend frameworks are functional code skeletons that allows you to
           build custom REST APIs on your own server to store data, perform
@@ -51,10 +101,20 @@ function StarterPacks() {
         </p>
         <ul>
           <li>
-            <a href="https://flask.palletsprojects.com/en/1.1.x/api/">Flask API Reference</a>
+            <a
+              href="https://flask.palletsprojects.com/en/1.1.x/api/"
+              target="_blank"
+            >
+              Flask API Reference
+            </a>
           </li>
           <li>
-            <a href="https://github.com/hackuci/zothacks-2020-backend">Flask Backend Workshop Template</a>
+            <a
+              href="https://github.com/hackuci/zothacks-2020-backend"
+              target="_blank"
+            >
+              Flask Backend Workshop Template
+            </a>
           </li>
         </ul>
         {/* <h4>Flask</h4>

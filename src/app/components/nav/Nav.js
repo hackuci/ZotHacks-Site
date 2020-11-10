@@ -20,11 +20,11 @@ function Nav() {
             Home
           </p>
         </a>
-        {/* <Link to="/starter-packs">
-          <Button variant="outline-light">
+        <Link to="/starter-packs">
+          <p className="home-button-hide">
             Starter Packs
-          </Button>
-        </Link> */}
+          </p>
+        </Link>
         <Link to="/schedule">
           <Button variant="outline-light">
             Schedule

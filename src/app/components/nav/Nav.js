@@ -25,11 +25,11 @@ function Nav() {
             Starter Packs
           </Button>
         </Link> */}
-        {/* <Link to="/schedule">
+        <Link to="/schedule">
           <Button variant="outline-light">
             Schedule
           </Button>
-        </Link> */}
+        </Link>
       </div>
     </div>
   )

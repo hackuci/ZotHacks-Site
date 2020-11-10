@@ -180,7 +180,7 @@
     }
 
     .schedule-card {
-      height: 600px;
+      height: fit-content;
       width: 400px;
       padding: 2rem;
       box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
@@ -188,8 +188,8 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin-left: 4rem;
-      margin-right: 4rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
 
       @media screen and (max-width: $break-medium) {
         margin-left: 0;

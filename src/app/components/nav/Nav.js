@@ -21,9 +21,9 @@ function Nav() {
           </p>
         </a>
         <Link to="/starter-packs">
-          <p className="home-button-hide">
+          <Button variant="outline-light" style={{marginRight: "1.5rem"}}>
             Starter Packs
-          </p>
+          </Button>
         </Link>
         <Link to="/schedule">
           <Button variant="outline-light">

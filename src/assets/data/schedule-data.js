@@ -44,6 +44,10 @@ let scheduleData = [
         time: "12:00PM - 1:00PM",
       },
       {
+        name: "Hack at UCI: Fall Internship Panel",
+        time: "1:00PM - 1:30PM",
+      },
+      {
         name: "Skribbl.io",
         time: "1:30PM - 2:30PM",
       },
@@ -56,19 +60,19 @@ let scheduleData = [
         time: "4:30PM - 5:30PM",
       },
       {
-        name: "Speed Social Networks",
-        time: "7:00PM - 8:00PM",
+        name: "Speed Social Networking",
+        time: "6:00PM - 6:30PM",
       },
       {
         name: "Jackbox Party Pack",
-        time: "9:30PM - 9:30PM",
+        time: "8:30PM - 9:30PM",
       },
       {
         name: "Cards Against Humanity",
         time: "10:00PM - 11:00PM",
       },
       {
-        name: "Cards Against Humanity",
+        name: "Office Hours: Hack / WICS",
         time: "11:00PM - 12:00AM",
       },
     ],

@@ -18,6 +18,8 @@ import sinWaveTwo from "assets/images/white_sinewave_2.png"
 import digitalOcean from "assets/images/sponsors/digitalOcean.png"
 import voiceflow from "assets/images/sponsors/voiceflow.png"
 import danaher from "assets/images/sponsors/danaher.png"
+import zillow from "assets/images/sponsors/zillow.png"
+import github from "assets/images/sponsors/github.png"
 
 function Home() {
   return (
@@ -140,11 +142,13 @@ function Home() {
       <section id="sponsors">
         <Fade duration={1000}>
           <h2>Sponsors</h2>
-          <h3>Paid Sponsors</h3>
+          <h3>Gold Sponsors</h3>
           <div className="sponsor-logo-wrapper">
             <img src={danaher}></img>
+            <img src={zillow}></img>
+            <img src={github}></img>
           </div>
-          <h3>Service Sponsors</h3>
+          <h3>Silver Sponsors</h3>
           <div className="sponsor-logo-wrapper">
             <img src={digitalOcean}></img>
             <img src={voiceflow}></img>

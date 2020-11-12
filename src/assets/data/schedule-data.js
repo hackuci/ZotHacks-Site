@@ -11,6 +11,10 @@ let scheduleData = [
         time: "9:30PM - 10:00PM",
       },
       {
+        name: "Hacking Begins",
+        time: "10:00PM",
+      },
+      {
         name: "Frontend Workshop",
         time: "10:00PM - 11:00PM",
       },
@@ -32,7 +36,7 @@ let scheduleData = [
         time: "1:30AM - 2:30AM",
       },
       {
-        name: "WICS Workshop",
+        name: "Advanced Frontend Workshop by WICS",
         time: "9:00AM - 10:00AM",
       },
       {
@@ -40,7 +44,7 @@ let scheduleData = [
         time: "10:30PM - 11:30AM",
       },
       {
-        name: "Codepath Workshop",
+        name: "Codepath iOS Workshop",
         time: "12:00PM - 1:00PM",
       },
       {
@@ -52,7 +56,7 @@ let scheduleData = [
         time: "1:30PM - 2:30PM",
       },
       {
-        name: "Design at UCI Workshop Office Hours",
+        name: "Design Fundamentals Q&A by Design at UCI",
         time: "3:00PM - 4:00PM",
       },
       {
@@ -62,6 +66,10 @@ let scheduleData = [
       {
         name: "Speed Social Networking",
         time: "6:00PM - 6:30PM",
+      },
+      {
+        name: "Codepath Android Workshop",
+        time: "7:00PM - 8:00PM",
       },
       {
         name: "Jackbox Party Pack",

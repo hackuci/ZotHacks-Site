@@ -93,6 +93,10 @@ let scheduleData = [
         time: "8:00AM - 8:30AM",
       },
       {
+        name: "Submission Help",
+        time: "8:30AM - 9:00AM",
+      },
+      {
         name: "Hacking Ends",
         time: "10:00AM",
       },

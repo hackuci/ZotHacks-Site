@@ -29,7 +29,7 @@ function StarterPacks() {
             </a>
           </li>
         </ul>
-        <h4>Frontend Repository</h4>
+        <h4>Backend Repository</h4>
         <p>Repository that holds the code for the backend workshop.</p>
         <ul>
           <li>

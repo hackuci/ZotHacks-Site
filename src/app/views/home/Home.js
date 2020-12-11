@@ -5,7 +5,6 @@ import { faqQuestions } from "assets/data/faq-questions"
 import { Button } from "react-bootstrap"
 import Fade from "react-reveal/Fade"
 import { motion } from "framer-motion"
-import ReactTooltip from "react-tooltip"
 
 import { FAQCollapse } from "app/containers"
 import zothacksSucc from "assets/images/zothacksucc.png"
@@ -13,30 +12,18 @@ import bubbles from "assets/images/bubbles.png"
 import mentorship from "assets/images/mentorship.png"
 import butterflyOne from "assets/images/butterflyOne.png"
 import butterflyTwo from "assets/images/butterflyTwo.png"
-import sinWaveOne from "assets/images/white_sinewave_1.png"
-import sinWaveTwo from "assets/images/white_sinewave_2.png"
-import digitalOcean from "assets/images/sponsors/digitalOcean.png"
-import voiceflow from "assets/images/sponsors/voiceflow.png"
-import danaher from "assets/images/sponsors/danaher.png"
-import zillow from "assets/images/sponsors/zillow.png"
-import github from "assets/images/sponsors/github.png"
 
 function Home() {
   return (
     <div className="Home">
-      <ReactTooltip />
       <section id="intro">
         <div className="intro-wrapper">
           <div className="title-info">
             <Fade duration={1000} left>
               <div>
                 <h1>ZotHacks</h1>
-                <h4>November 13-15th</h4>
-                <a
-                  href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
-                  data-place="bottom"
-                  data-tip="Make sure to use your UCI email!"
-                >
+                <h4>November 13-14th</h4>
+                <a href="https://tinyurl.com/zothacks2019">
                   <Button
                     style={{
                       borderRadius: "50px",
@@ -80,7 +67,6 @@ function Home() {
                 className="zucc-shadow"
                 animate={{
                   scale: [1.3, 1, 1.3],
-                  y: [-15, -15, -15],
                 }}
                 transition={{
                   duration: 5,
@@ -91,7 +77,17 @@ function Home() {
             </div>
           </div>
         </div>
-        <img className="sin-wave sin-wave--one" src={sinWaveOne} />
+        <svg
+          className="wave-transition"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#fcfcfc"
+            fill-opacity="1"
+            d="M0,224L48,208C96,192,192,160,288,138.7C384,117,480,107,576,128C672,149,768,203,864,208C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </section>
       <section id="info">
         <img src={bubbles} />
@@ -101,10 +97,9 @@ function Home() {
             <p>
               ZotHacks is a beginner-friendly hackathon where students with
               minimal computer science experience will learn to build and build
-              their first CS project. Through ZotHacks, we introduce these
+              a full-stack web application. Through ZotHacks, we introduce these
               students to the world of hackathons and web development by
-              providing technical workshops, strong mentorship, and
-              virtual-friendly events!
+              providing technical workshops, strong mentorship, and free food!
             </p>
           </Fade>
         </div>
@@ -116,47 +111,35 @@ function Home() {
           <div className="mentor-information">
             <h3>Interested in becoming a mentor?</h3>
             <p>
-              Have hackathon experience and would love to share it with new
-              developers? Apply to be a mentor for ZotHacks 2020!
+              Please become a mentor. Please. Pleaaaaaase. Cmonnnnn. Please we
+              need mentors. Cmon please. Think about it, lemme know ;){" "}
             </p>
-            <a
-              href="https://docs.google.com/forms/d/1hCRUwgHL485K8O_OXVOohpAU0U_jqqpbHctsu6i4mdk"
-              data-place="bottom"
-              data-tip="Make sure to use your UCI email!"
+            <Button
+              style={{
+                borderRadius: "50px",
+                width: "200px",
+                backgroundColor: "#F95C6F",
+                height: "40px",
+              }}
             >
-              <Button
-                style={{
-                  borderRadius: "50px",
-                  width: "200px",
-                  backgroundColor: "#F95C6F",
-                  height: "40px",
-                }}
-              >
-                Apply to be a Mentor
-              </Button>
-            </a>
+              Apply to be a Mentor
+            </Button>
           </div>
         </div>
         <img className="mentors-butterfly --two" src={butterflyTwo} />
       </section>
-      <section id="sponsors">
-        <Fade duration={1000}>
-          <h2>Sponsors</h2>
-          <h3>Gold Sponsors</h3>
-          <div className="sponsor-logo-wrapper">
-            <img src={danaher}></img>
-            <img src={zillow}></img>
-            <img src={github}></img>
-          </div>
-          <h3>Silver Sponsors</h3>
-          <div className="sponsor-logo-wrapper">
-            <img src={digitalOcean}></img>
-            <img src={voiceflow}></img>
-          </div>
-        </Fade>
-      </section>
       <section id="faq">
-        <img className="sin-wave sin-wave--two" src={sinWaveTwo} />
+        <svg
+          className="wave-transition"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#fcfcfc"
+            fill-opacity="1"
+            d="M0,96L60,101.3C120,107,240,117,360,112C480,107,600,85,720,74.7C840,64,960,64,1080,80C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+          ></path>
+        </svg>
         <Fade duration={1000}>
           <h2>FAQ</h2>
           <div>

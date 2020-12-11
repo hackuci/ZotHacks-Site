@@ -1,29 +1,30 @@
-import React, { useState } from 'react';
-import { Route, Switch, Router } from 'react-router-dom';
-import history from './history';
-import './App.scss';
+import React from "react"
+import { Route, Switch, HashRouter } from "react-router-dom"
+import history from "./history"
+import "./App.scss"
 
-import {
-  Home,
-  Schedule
-} from 'app/views';
+import { Home, Schedule, StarterPacks } from "app/views"
 
-import {
-  Nav
-} from 'app/components';
+import { Nav } from "app/components"
 
 function App() {
   return (
-    <div className='App'>
-      <Router history={history}>
+    <div className="App">
+      <HashRouter history={history} basename="/Zothacks-Site">
         <Nav history={history}></Nav>
         <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/schedule' component={Schedule}/>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/schedule" component={Schedule} />
+          <Route exact path="/starter-packs" component={StarterPacks} />
+        
+          <Route path='/github' component={() => { 
+            window.location.href = 'https://education.github.com/discount_requests/student_application?utm_source=2020-11-13-ZotHacks2020'; 
+            return null;
+          }}/>
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -2,9 +2,11 @@
   "name": "zothacks",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zothacks.com",
   "dependencies": {
     "feather-icons": "^4.28.0",
     "framer-motion": "^2.6.15",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
@@ -13,13 +15,17 @@
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.3",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "react-tooltip": "^4.2.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "serve": "npx serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
